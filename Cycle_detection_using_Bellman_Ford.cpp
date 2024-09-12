@@ -23,6 +23,8 @@ int main()
         int u, v, c;
         cin >> u >> v >> c;
         EdgeList.push_back(Edge(u, v, c));
+        // Below line just for "UNDIRECTED GRAPH"
+        EdgeList.push_back(Edge(v,u,c));
     }
     vector<int> dis(n, INT_MAX);
     dis[0] = 0;
